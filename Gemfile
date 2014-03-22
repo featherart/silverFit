@@ -4,6 +4,7 @@ gem 'rails', '3.2.14'
 
 #gem 'sqlite3'
 gem 'pg'
+gem 'devise'
 
 
 # Gems used only for assets and not required
