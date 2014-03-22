@@ -6,6 +6,12 @@ class UsersController < ApplicationController
   end
 
   def new
+    user = User.new
+    if params[:goal]
+      user.goal = params[:goal]
+      user.save
+    end
+    render "/users/basic_info"
   end
 
   def destroy
