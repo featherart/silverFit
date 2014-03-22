@@ -1,7 +1,7 @@
 class EmailCampaignApi
 
   def self.add_or_update_mobility_list user 
-    email_list_id = "#{Babylist::Application.config.MOBILITY_LIST_ID}"
+    email_list_id = "#{silverFit::Application.config.MOBILITY_LIST_ID}"
     gb = Gibbon::API.new
     gb.lists.subscribe({
       :id=> email_list_id, 
@@ -10,7 +10,7 @@ class EmailCampaignApi
   end 
 
   def self.remove_from_mobility_list user
-    email_list_id = "#{Babylist::Application.config.MOBILITY_LIST_ID}"
+    email_list_id = "#{silverFit::Application.config.MOBILITY_LIST_ID}"
     gb = Gibbon::API.new
     gb.lists.unsubscribe({
       :id => email_list_id,
