@@ -19,6 +19,7 @@ group :development, :test do
   gem 'pry-rails'
 end
 
+gem 'gibbon', git: 'git://github.com/amro/gibbon.git'
 gem 'jquery-rails'
 gem 'unicorn'
 
