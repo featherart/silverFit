@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails SilverFit: development" uuid="c3d820f3-b93a-4f04-bfaf-98bf6a8d3fe3">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails SilverFit: test" uuid="0d4765ba-9d1d-4a64-b68c-505911f74667">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails SilverFit: production" uuid="29abb269-c1d6-41fb-ad19-a6aab515d0ef">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>

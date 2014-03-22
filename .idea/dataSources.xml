@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="513727726">
+    <data-source source="LOCAL" name="Rails SilverFit: development" uuid="c3d820f3-b93a-4f04-bfaf-98bf6a8d3fe3">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/silver_fit_dev</jdbc-url>
+      <user-name>lisafeatherknee</user-name>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails SilverFit: test" uuid="0d4765ba-9d1d-4a64-b68c-505911f74667">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/silver_fit_test</jdbc-url>
+      <user-name>lisafeatherknee</user-name>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails SilverFit: production" uuid="29abb269-c1d6-41fb-ad19-a6aab515d0ef">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:silver_fit_production</jdbc-url>
+      <user-name>lisafeatherknee</user-name>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+
