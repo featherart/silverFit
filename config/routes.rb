@@ -1,14 +1,6 @@
 SilverFit::Application.routes.draw do
-  get "users/index"
-
-  get "users/create"
-
-  get "users/new"
-
-  get "users/destroy"
-
-  get "users/show"
-
+  root to: "pages#index"
+  resources :users 
   get "pages/index"
 
   # The priority is based upon order of creation:
