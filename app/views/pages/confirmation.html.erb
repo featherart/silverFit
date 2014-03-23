@@ -3,13 +3,22 @@
     <div id="myCarousel" class="carousel slide" style="margin-bottom:0;" data-interval="false">
       <!-- Indicators -->
       <div class="carousel-inner black">
-        <div class="item active" style="height:350px;">
+        <div class="item active" style="height:350px; margin-bottom:100px;">
           <div class="container">
             <div class="carousel-caption profile">
-              <h1>Your Profile</h1>
-              <p>Do you recognize you have less energy than you used to?</p> 
-              <p>Do you feel generally lethargic?</p> 
-              <p>SilverFit can energize you!</p>
+
+ 
+                <div class="col-xs-6" >
+                    <%= image_tag("profile.png", :class=> "img-circle profile") %>
+
+                    <h3>Bob Saget</h3>
+                    <h6>Email: bob@gmail.com</h6>
+                    <h6><a href="#">Edit... </a></h6>
+                </div>
+                <div class="col-xs-6" >
+                    <%= image_tag("silverfit-badge.png", :class=> "img-circle profile", :style => "width:75%; position:absolute;") %>
+                </div>
+
 
             </div>
           </div>
