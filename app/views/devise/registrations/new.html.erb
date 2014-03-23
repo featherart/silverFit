@@ -6,7 +6,7 @@
     <p class="text-center">Silver Fit helps Boomers get fit, live healthier, more active lives, and spend more time with loved ones.</p>
 
     <div class="info-form">
-      <h3>First, we need your email!</h3>
+      <h3>First, we need your email, your name, and a password!</h3>
 
       <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
         <%= devise_error_messages! %>
@@ -14,15 +14,27 @@
         <div><%= f.label :email %><br />
         <%= f.email_field :email, :autofocus => true %></div>
 
- <!--        <div><%#= f.label :name %><br />
-        <%#= f.text_field :name %></div> -->
+        <div><h3>Name</h3>
+        <input type="text"></input><br />
 
-      <!--   <div><%#= f.label :password %><br />
-        <%#= f.password_field :password %></div>
+        <div><%= f.label :password %><br />
+        <%= f.password_field :password %></div>
 
-        <div><%#= f.label :password_confirmation %><br />
-        <%#= f.password_field :password_confirmation %></div> -->
+        <div><%= f.label :password_confirmation %><br />
+        <%= f.password_field :password_confirmation %></div>
         <br/>
+
+        <h3>Now, we need a bit more info:</h3>
+
+        <%= f.select(:activity_level, ['1', '2', '3', '4', '5']) %>
+
+        <label>Weight: <%= u.text_field :weight %></label><br />
+        <label>Current Activity Level: <%= u.text_field :activity_level %></label><br />
+        <label>Gender: <%= u.text_field :gender %></label><br />
+        <label>When do you want to reach your goal?</label><br />
+          <%= u.text_field :deadline %><br />
+
+
         <div><%= f.submit "Sign up" %></div>
       <% end %>
     </div>
