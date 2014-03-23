@@ -8,8 +8,7 @@
     
     <div class="info-form">
       <%= form_for @user, :url => "/users/update" do |u| %>
-        <%= u.hidden_field :id %>
-        <%= u.text_field :name %>
+        <%= u.select(:activity_level, ['1', '2', '3', '4', '5']) %>
         <%= u.text_field :email %>
         <%= submit_tag "Let's go!", :class => 'btn btn-info' %>
       <% end %>
@@ -21,8 +20,6 @@
 
     <hr>
   </div>
-=======
-
 
     <div class="container">
 
@@ -46,7 +43,6 @@
 
         <hr>
       </div>
->>>>>>> 762830c1d972bf9d0fff2bbbb6ed61544484fd17
 
     </div> <!-- /container -->
 
