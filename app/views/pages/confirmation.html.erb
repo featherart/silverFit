@@ -1,0 +1,74 @@
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" style="margin-bottom:0;" data-interval="false">
+      <!-- Indicators -->
+      <div class="carousel-inner black">
+        <div class="item active" style="height:350px;">
+          <div class="container">
+            <div class="carousel-caption profile">
+              <h1>Your Profile</h1>
+              <p>Do you recognize you have less energy than you used to?</p> 
+              <p>Do you feel generally lethargic?</p> 
+              <p>SilverFit can energize you!</p>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon right">&raquo;</span></a>
+    </div><!-- /.carousel -->
+
+
+
+
+    <div class="container">
+
+            <h3 style="text-align:center">Your Accountabuddies</h3>
+
+        <div class="row">
+            <div class="col-xs-4" >
+                <%= image_tag("profile.png", :class=> "img-circle profile") %>
+
+                <h3>Bob Saget</h3>
+                <h6>Email: bob@gmail.com</h6>
+                <h6><a href="#">Edit... </a></h6>
+            </div>
+            <div class="col-xs-4" >
+                <%= image_tag("profile.png", :class=> "img-circle profile") %>
+
+                <h3>Marge Simpson</h3>
+                <h6>Email: marge@gmail.com</h6>
+                <h6><a href="#">Edit... </a></h6>
+            </div>
+            <div class="col-xs-4" >
+                <%= image_tag("profile.png", :class=> "img-circle profile") %>
+
+                <h3>Liz Hubertz</h3>
+                <h6>Email: liz@gmail.com</h6>
+                <h6><a href="#">Edit... </a></h6>
+            </div>
+            <hr>
+            <div class="col-6 col-sm-4 col-lg-4">
+                
+            </div>
+        </div>
+    </div>
+
+
+<style type="text/css">
+    .profile {
+        width:50%;
+        float:left;
+        margin-right: 10px;
+    }
+    .carousel-caption.profile {
+        text-align:left;
+        left:0;
+        margin-left:73px;
+    }
+    .carousel-inner.black {
+        background-color:black;
+        opacity:0.5;
+    }
+</style>
