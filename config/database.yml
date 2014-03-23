@@ -4,7 +4,7 @@ development:
   database: silver_fit_dev
   pool: 5
   host: localhost
-  username: Jason
+  username: silverfit
 
 test:
   adapter: postgresql
@@ -12,11 +12,11 @@ test:
   database: silver_fit_test
   pool: 5
   host: localhost
-  username: Jason
+  username: silverfit
 
 production:
   adapter: postgresql
   encoding: unicode
   database: silver_fit_production
   pool: 5
-  username: Jason
+  username: silverfit
