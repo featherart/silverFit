@@ -6,5 +6,7 @@ SilverFit::Application.routes.draw do
   
   get "pages/index"
   resources :users
+  
+  post "users/basic_info"
 
 end

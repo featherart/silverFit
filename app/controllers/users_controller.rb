@@ -7,15 +7,17 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
+
     # if params[:goal]
     #   user.goal = params[:goal]
     #   user.save
     # end
-    render "/users/basic_info"
+    render "basic_info" 
   end
 
   def basic_info
-    @user = User.find_by_id(params[:id]) || User.new
+    @user = User.find_by_id(params[:id]) #|| User.new
+    #redirect_to @user
   end
 
   def update
@@ -28,5 +30,8 @@ class UsersController < ApplicationController
   end
 
   def show
+    #binding.pry
+    #@user = User.find(params[:id])
+    @user = User.find(2)
   end
 end
