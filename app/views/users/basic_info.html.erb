@@ -1,27 +1,25 @@
+<div class="container">
 
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron text-center">
+    <h1 class="text-center">Basic Info Yay</h1>
+    <p class="text-center">Silver Fit helps Boomers get fit, live healthier, more active lives, and spend more time with loved ones.</p>
+    
+    <div class="info-form">
+      <%= form_for @user, :url => "/users/update" do |u| %>
+        <%= u.hidden_field :id %>
+        <%= u.text_field :name %>
+        <%= u.text_field :email %>
+        <%= submit_tag "Let's go!", :class => 'btn btn-info' %>
+      <% end %>
 
-    <div class="container">
+    </div>
+  </div>
 
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron text-center">
-        <h1 class="text-center">Basic Info Yay</h1>
-        <p class="text-center">Silver Fit helps Boomers get fit, live healthier, more active lives, and spend more time with loved ones.</p>
-        
-        <div class="info-form">
-          <%= form_for @user, :url => "/users/update" do |u| %>
-            <%= u.hidden_field :id %>
-            <%= u.text_field :name %>
-            <%= u.text_field :email %>
-            <%= submit_tag "Let's go!", :class => 'btn btn-info' %>
-          <% end %>
+  <div class="body-content">
 
-        </div>
-      </div>
-
-      <div class="body-content">
-
-        <hr>
-      </div>
+    <hr>
+  </div>
 
     </div> <!-- /container -->
 

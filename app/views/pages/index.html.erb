@@ -7,7 +7,7 @@
   <p class="text-center">Silver Fit helps Boomers get fit, live healthier, more active lives, and spend more time with loved ones.</p>
   <div class="goal-buttons">
     <h2 class="prompt">What is your goal?</h2>
-    <p><a class="btn btn-success" href="/users/new?goal=1">Overall Health</a></p>
+    <p><%= link_to "Overall Health", users_basic_info_path, class: 'btn btn-success' %></p>
     <p><a class="btn btn-success" href="/users/new?goal=2">Improve Mobility</a></p>
     <p><a class="btn btn-success" href="/users/new?goal=3">Weight Loss</a></p>
     <p><a class="btn btn-success" href="/users/new?goal=4">Build Muscle</a></p>
