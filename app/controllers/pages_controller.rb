@@ -3,6 +3,9 @@ class PagesController < ApplicationController
     @user = User.new
   end
 
+  def form
+  end
+
   def confirmation
     render 'confirmation'
   end

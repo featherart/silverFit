@@ -1,19 +1,125 @@
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-interval="false">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <%= image_tag 'weightlifter-cropped.jpg' %>
+          <div class="container">
+            <div class="carousel-caption intro text-center">
+              <h1>Need more energy?</h1>
+              <p>Do you recognize you have less energy than you used to?</p> 
+              <p>Do you feel generally lethargic?</p> 
+              <p>SilverFit can energize you!</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag 'swimmer.jpg' %>
+          <div class="container">
+            <div class="carousel-caption intro text-center">
+              <h1>Desire to be more active?</h1>
+              <p>Do you recognize the need to increase activity to improve your quality of life?</p> 
+              <p>Have you noticed it is more challenging to get on the floor to play with your grandkids?</p>
+              <p>SilverFit can activate you!</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag 'cyclists.jpg' %>
+          <div class="container">
+            <div class="carousel-caption intro text-center">
+              <h1>Want activities that fit you?</h1>
+              <p>Haven’t found an activity that works for you?</p> 
+              <p>Are gyms and trainers intimidating?</p>
+              <p>SilverFit can provide you gentle guidance with specific activities that work for you!</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon right">&raquo;</span></a>
+    </div><!-- /.carousel -->
+
+    <div class="container marketing">
+            <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Need more energy?</h2>
+          <p>Do you recognize you have less energy than you used to? Do you feel generally lethargic? SilverFit can energize you!</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <h2>Motivate</h2>
+          <p>Register up to four Accountabuddies to encourage you along the way.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <h2>Learn</h2>
+          <p>Build your personalized workout journal over time. Let us know how you like each exercise, so we can customize your experience based on what you love, what you need, and where you want to go.</p>
+          <p><a class="btn btn-large btn-success next" href="/yes">Let's go &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+    </div>
+
+<style type="text/css">
+  img {
+    opacity:0.5;
+  }
+  .glyphicon.right {
+    margin-top:150%;
+    font-size: 200%;
+  }
+  .carousel-caption.intro {
+    padding-bottom:140px;
+  }
+
+  .btn.next {
+    width:130px;
+    height:40px;
+    font-size:120%;
+  }
+
+  body, h1, h2, p, a {
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    color:black;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+<!-- liz testing carousel -->
+
 <!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron text-center pattern">
-  <p class="text-center">SilverFit helps Boomers get fit, live healthier, more active lives, and spend more time with loved ones.</p>
+<!-- <div class="jumbotron text-center pattern">
+  <p class="text-center">Achievable workouts to help you put the boom back in Boomer.</p>
   <div class="goal-buttons">
     <h2 class="prompt">What is your goal?</h2>
     <p><%= link_to "Overall Health", users_basic_info_path, class: 'btn btn-success' %></p>
-    <p><a class="btn btn-success" href="/users/new?goal=2">Improve Mobility</a></p>
-    <p><a class="btn btn-success" href="/users/new?goal=3">Weight Loss</a></p>
-    <p><a class="btn btn-success" href="/users/new?goal=4">Build Muscle</a></p>
+    <p><a class="btn btn-success" href="/pages/form">Improve Mobility</a></p>
+    <p><a class="btn btn-success" href="/pages/form">Weight Loss</a></p>
+    <p><a class="btn btn-success" href="/pages/form">Build Muscle</a></p>
   </div>
-</div>
+</div> -->
 
 
 
 <style type="text/css">
-  body, h1.logo, h2.prompt {
+/*  body, h1.logo, h2.prompt {
     font-family: "PT Sans", Arial, Helvetica, sans-serif;
   }
   .goal-buttons {
@@ -25,5 +131,5 @@
   }
   .jumbotron.pattern {
     background: url(http://subtlepatterns.com/patterns/p6.png) repeat;
-  }
+  }*/
 </style>
