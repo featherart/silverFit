@@ -6,8 +6,8 @@ class UsersController < ApplicationController
   end
 
   def new
-    user = User.new
-    
+    @user = User.new
+
     # if params[:goal]
     #   user.goal = params[:goal]
     #   user.save

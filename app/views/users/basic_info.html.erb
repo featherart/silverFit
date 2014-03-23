@@ -25,14 +25,20 @@
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron text-center">
-        <h1 class="text-center">Basic Info Yay</h1>
-        <p class="text-center">SilverFit helps Boomers get fit, live healthier, more active lives, and spend more time with loved ones.</p>
+
+        <h1 class="text-center">Tell us about yourself</h1>
+        <p class="text-center">This information will be used to send activities based on your exact needs.</p>
         
         <div class="info-form">
           <%= form_for @user, :url => "/users/update" do |u| %>
             <%= u.hidden_field :id %>
-            <%= u.text_field :name %>
-            <%= u.text_field :email %>
+            <label>Email: <%= u.text_field :email %></label><br />
+            <label>Age: <%= u.text_field :age %></label><br />
+            <label>Weight: <%= u.text_field :weight %></label><br />
+            <label>Current Activity Level: <%= u.text_field :activity_level %></label><br />
+            <label>Gender: <%= u.text_field :gender %></label><br />
+            <label>When do you want to reach your goal?</label><br />
+              <%= u.text_field :deadline %><br />
             <%= submit_tag "Let's go!", :class => 'btn btn-info' %>
           <% end %>
 
@@ -45,4 +51,3 @@
       </div>
 
     </div> <!-- /container -->
-
